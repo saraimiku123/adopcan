@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/otro"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/logocirculo" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_editext"
+        app:cardBackgroundColor="@color/azulito"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="80dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <EditText
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gris"
+                android:drawablePadding="8dp"
+                android:hint="Correo"
+
+                android:padding="8dp"
+                android:textColor="@color/negro"
+                android:textColorHint="@color/negro"
+
+                />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gris"
+                android:drawablePadding="8dp"
+                android:hint="Contraseña"
+                android:padding="8dp"
+                android:textColor="@color/negro"
+                android:textColorHint="@color/negro" />
+
+
+            <Button
+                android:id="@+id/guardar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/azul_claro"
+                android:text="Iniciar sesión"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:fontFamily="@font/secularone_regular" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿No tienes cuenta?"
+            android:textAlignment="gravity"
+            android:textColor="@color/negro"
+            android:textSize="14sp"
+            android:fontFamily="@font/secularone_regular"/>
+
+        <TextView
+            android:id="@+id/registrarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Registrarse"
+            android:textColor="@color/negro"
+            android:textSize="14sp"
+            android:fontFamily="@font/secularone_regular" />
+    </LinearLayout>
+
+
+</LinearLayout>

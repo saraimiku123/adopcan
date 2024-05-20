@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:gravity="center"
+    android:background="@color/otro"
+    android:layout_marginBottom="3dp"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="180dp"
+
+
+        android:gravity="center"
+        app:srcCompat="@drawable/logocirculo" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:textAlignment="center"
+            android:textColor="@color/negro"
+            android:textSize="20sp"
+            android:fontFamily="@font/secularone_regular" />
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="80dp"
+        android:background="@drawable/custom_editext"
+        app:cardBackgroundColor="@color/azulito">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+
+            <EditText
+                android:id="@+id/namecrear"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gris"
+                android:drawablePadding="8dp"
+                android:hint="Nombre"
+                android:padding="8dp"
+                android:textColor="@color/negro"
+                android:textColorHint="@color/negro"
+
+                />
+
+
+
+            <EditText
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/gris"
+                android:drawablePadding="8dp"
+                android:hint="Teléfono"
+                android:padding="8dp"
+                android:textColor="@color/negro"
+                android:textColorHint="@color/negro" />
+
+
+
+
+            <EditText
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gris"
+                android:drawablePadding="8dp"
+                android:hint="Correo"
+                android:padding="8dp"
+                android:textColor="@color/negro"
+                android:textColorHint="@color/negro" />
+
+
+
+            <EditText
+                android:id="@+id/contraseniatext"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gris"
+                android:drawablePadding="8dp"
+                android:hint="Contraseña"
+                android:padding="8dp"
+                android:textColor="@color/negro"
+                android:textColorHint="@color/negro" />
+
+            <Button
+                android:id="@+id/crearuser"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/azul_claro"
+                android:text="Crear cuenta"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:fontFamily="@font/secularone_regular"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acepto los"
+            android:textColor="@color/negro"
+            android:textSize="12sp"
+            android:fontFamily="@font/secularone_regular" />
+
+        <TextView
+            android:id="@+id/terminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Terminos y condiciones de privacidad"
+            android:textColor="@color/azulito"
+            android:textSize="12sp"
+            android:fontFamily="@font/secularone_regular" />
+
+    </LinearLayout>
+
+</LinearLayout>

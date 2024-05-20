@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Adopcan" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+
+    </style>
+
+
+
+    <style name="Theme.Adopcan" parent="Base.Theme.Adopcan">
+
+    </style>
+
+
+
+</resources>
