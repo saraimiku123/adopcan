@@ -47,9 +47,9 @@
                 android:background="@color/gris"
                 android:drawablePadding="8dp"
                 android:hint="Correo"
-
                 android:padding="8dp"
                 android:textColor="@color/negro"
+                android:inputType="textEmailAddress"
                 android:textColorHint="@color/negro"
 
                 />
@@ -65,11 +65,12 @@
                 android:hint="Contraseña"
                 android:padding="8dp"
                 android:textColor="@color/negro"
+                android:inputType="textPassword"
                 android:textColorHint="@color/negro" />
 
 
             <Button
-                android:id="@+id/guardar"
+                android:id="@+id/iniciar_sesion"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="25dp"

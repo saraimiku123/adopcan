@@ -84,7 +84,8 @@
                 android:hint="Teléfono"
                 android:padding="8dp"
                 android:textColor="@color/negro"
-                android:textColorHint="@color/negro" />
+                android:textColorHint="@color/negro"
+                android:inputType="phone"/>
 
 
 
@@ -99,7 +100,8 @@
                 android:hint="Correo"
                 android:padding="8dp"
                 android:textColor="@color/negro"
-                android:textColorHint="@color/negro" />
+                android:textColorHint="@color/negro"
+                android:inputType="textEmailAddress"/>
 
 
 
@@ -113,7 +115,8 @@
                 android:hint="Contraseña"
                 android:padding="8dp"
                 android:textColor="@color/negro"
-                android:textColorHint="@color/negro" />
+                android:textColorHint="@color/negro"
+                android:inputType="textPassword"/>
 
             <Button
                 android:id="@+id/crearuser"
