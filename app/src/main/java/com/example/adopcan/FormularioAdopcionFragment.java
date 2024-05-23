@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class AdopcionesFragment extends Fragment {
+public class FormularioAdopcionFragment extends Fragment {
 
 
 
@@ -19,6 +19,6 @@ public class AdopcionesFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_adopciones, container, false);
+        return inflater.inflate(R.layout.fragment_formulario_adopcion, container, false);
     }
 }

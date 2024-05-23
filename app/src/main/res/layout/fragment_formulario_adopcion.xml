@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioAdopcionFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="83dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/titulos"
+                android:fontFamily="@font/secularone_regular"
+                android:text="Formulario de Adopción"
+                android:textAlignment="center"
+
+                android:textColor="@color/negro"
+                android:textSize="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/otro"
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="1.- Comprobante de domicilio:"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/domicilio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/gris"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="Subir en formato PDF"
+                        android:textColor="@color/negro"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="2.- INE:"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/ine"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/gris"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="Subir en formato PDF"
+                        android:textColor="@color/negro"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="3.- ¿Cuál es su ingreso mensual?"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/ingresos_monetarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gris"
+                        android:fontFamily="@font/secularone_regular"
+                        android:hint="Ingresos"
+                        android:inputType="numberDecimal"
+                        android:padding="15dp"
+                        android:textColor="@color/negro"
+                        android:textColorHint="@color/negro"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="4.- ¿Es Soltero o casado?"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/style_spinner" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="5.- ¿Tiene hijos? \n (De no tenerlos poner 0)"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/style_spinner" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="6.- ¿Su casa cuenta con jardín?"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/style_spinner" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="7.-Para animales con
+                        condiciones especiales:
+                         ¿estaría dispuesto a realizar las
+                         adecuaciones necesarias para que el
+                         animal viva bien?"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/style_spinner" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="8.-¿Tiene disponibilidad de tiempo
+                        para cuidados del animal? "
+                        android:textAlignment="gravity"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/style_spinner" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="9.- En caso de no tener tiempo,
+                        ¿Hay alguien más que pueda proporcionarle
+                        ayuda con los cuidados?"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/style_spinner" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/solicitar_adopcion"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/azul_claro"
+                android:fontFamily="@font/secularone_regular"
+                android:text="Solicitar Adopcion"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cancelar_adopcion"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/botones"
+                android:fontFamily="@font/secularone_regular"
+                android:text="Cancelar"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
