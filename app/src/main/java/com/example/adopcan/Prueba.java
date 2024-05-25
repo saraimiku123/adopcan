@@ -22,7 +22,7 @@ public class Prueba extends AppCompatActivity {
         binding = ActivityPruebaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        replaceFragment(new TiendaFragment());
+        replaceFragment(new Catalogo_MascotasFragment());
         binding.bottomNavigationView.setBackground(null);
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {

@@ -1,21 +1,29 @@
 package com.example.adopcan;
 
+import android.content.ContextParams;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+
+import android.view.PixelCopy;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
+
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.TextView;
 
-import java.util.List;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 
 public class FormularioAdopcionFragment extends Fragment {
+
 
     private Spinner estado_civil1;
     private  Spinner jardines  ;
@@ -27,13 +35,19 @@ public class FormularioAdopcionFragment extends Fragment {
 
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragmen
 
-         View view= inflater.inflate(R.layout.fragment_formulario_adopcion, container, false);
+
+    RequestQueue queue = Volley.newRequestQueue(getContext());
+
+
+
+        View view= inflater.inflate(R.layout.fragment_formulario_adopcion, container, false);
          estado_civil1= view.findViewById(R.id.estado_civil);
          jardines= view.findViewById(R.id.jardin);
          mejoras_hogar= view.findViewById(R.id.adecuaciones);
@@ -67,7 +81,6 @@ public class FormularioAdopcionFragment extends Fragment {
         adapterAyudanteCuidador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ayudante_cuidador.setAdapter(adapterAyudanteCuidador);
 
-      
 
 
 
@@ -80,4 +93,6 @@ public class FormularioAdopcionFragment extends Fragment {
 
 
     }
+
+
 }
