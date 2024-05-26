@@ -1,5 +1,6 @@
 package com.example.adopcan;
 
+
 import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,9 +38,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.PlayerViewHolder> {
         Glide.with(mCtx)
                 .load(mascotas.getImagen())
                 .into(holder.imgMascota);
-        holder.tvnombre.setText(mascotas.getNombre());
-        holder.tvedad.setText(String.valueOf(mascotas.getEdad()));
-        holder.tvsexo.setText(mascotas.getSexo());
+        holder.tvnombre.setText("Nombre: "+mascotas.getNombre());
+        holder.tvedad.setText("Edad: "+mascotas.getEdad());
+        holder.tvsexo.setText("Sexo"+mascotas.getSexo());
     }
 
     @Override

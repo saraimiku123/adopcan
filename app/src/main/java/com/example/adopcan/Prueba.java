@@ -38,7 +38,7 @@ public class Prueba extends AppCompatActivity {
 
             }
             else if(id==R.id.catalogo){
-                replaceFragment(new FormularioAdopcionFragment());
+                replaceFragment(new Catalogo_MascotasFragment());
 
             }
 
