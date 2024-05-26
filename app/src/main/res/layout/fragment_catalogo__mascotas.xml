@@ -5,21 +5,22 @@
     android:layout_height="match_parent"
     tools:context=".Catalogo_MascotasFragment">
 
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_marginTop="83dp"
-        android:id="@+id/catalogo"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"/>
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="83dp">
 
-    <ImageView
-        android:id="@+id/catalogo_imagen"
-        android:layout_width="228dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="100dp"
-        android:scaleType="centerCrop" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vista_catalogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
 
 
 </FrameLayout>
