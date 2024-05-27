@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="70dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/titulos"
+        android:fontFamily="@font/secularone_regular"
+        android:text="Ficha técnica"
+        android:textAlignment="center"
+        android:textColor="@color/negro"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageViewDetalle"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/nombreDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:textColor="@color/negro"/>
+
+    <TextView
+        android:id="@+id/edadDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        android:textSize="18sp"
+        android:textColor="@color/negro"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/sexoDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexo"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:textColor="@color/negro"/>
+
+    <TextView
+        android:id="@+id/tallaDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Talla"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:textColor="@color/negro"/>
+
+    <TextView
+        android:id="@+id/caracterDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carácter"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:textColor="@color/negro"/>
+
+    <TextView
+        android:id="@+id/pesoDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:textColor="@color/negro"/>
+
+    <TextView
+        android:id="@+id/tipoDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:textColor="@color/negro"/>
+
+    <TextView
+        android:id="@+id/razaDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Raza"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:textColor="@color/negro"/>
+
+    <TextView
+        android:id="@+id/gustosDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gustos"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:textColor="@color/negro"/>
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/azul_claro"
+        android:fontFamily="@font/secularone_regular"
+        android:textSize="20dp"
+        android:text="Adoptar"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="@color/azul_claro"
+        android:fontFamily="@font/secularone_regular"
+        android:text="Apadrinar"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</LinearLayout>
+
+</LinearLayout>

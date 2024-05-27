@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recCard"
+        android:layout_margin="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imagen_mascota"
+            android:layout_width="160dp"
+            android:layout_height="160dp"/>
+
+
+        <TextView
+            android:id="@+id/nombre_mascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:textColor="@color/negro"
+            android:text="Nombre:"
+            android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/edad_mascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="70dp"
+                android:textSize="20dp"
+                android:textColor="@color/negro"
+                android:text="Edad:"/>
+
+
+
+            <TextView
+                android:id="@+id/sexo_mascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:layout_marginStart="170dp"
+                android:textColor="@color/negro"
+                android:text="Sexo:"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/boton_vermas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="180dp"
+                android:text="Ver mas"
+                android:fontFamily="@font/secularone_regular"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:backgroundTint="@color/azul_claro"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>

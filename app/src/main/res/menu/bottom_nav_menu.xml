@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tienda"
+        android:icon="@drawable/logo_tienda"
+        android:title="Tienda "
+        />
+
+    <item
+        android:id="@+id/donaciones"
+        android:icon="@drawable/logo_donar"
+        android:title="Donar" />
+    <item
+        android:id="@+id/catalogo"
+        android:icon="@drawable/logo_catalogo"
+        android:title="Adopcion" />
+
+    <item
+        android:id="@+id/galeria"
+        android:icon="@drawable/logo_galeria"
+        android:title="Galeria"
+        />
+
+    <item
+        android:id="@+id/perfil"
+
+        android:icon="@drawable/logo_verificar"
+        android:title="Perfil"/>
+
+
+
+
+</menu>
