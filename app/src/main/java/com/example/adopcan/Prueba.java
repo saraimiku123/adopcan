@@ -15,7 +15,8 @@ import com.google.android.material.bottomnavigation.LabelVisibilityMode;
 
 
 public class Prueba extends AppCompatActivity {
-   ActivityPruebaBinding binding;
+
+  ActivityPruebaBinding binding;
     @Override
    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

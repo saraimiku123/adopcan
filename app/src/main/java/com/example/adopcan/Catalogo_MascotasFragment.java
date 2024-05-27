@@ -1,4 +1,3 @@
-
 package com.example.adopcan;
 
 import android.os.Bundle;

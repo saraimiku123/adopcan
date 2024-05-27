@@ -37,6 +37,7 @@ public class RegistroUsuarios extends AppCompatActivity {
                     startActivity(new Intent(RegistroUsuarios.this, Prueba.class));
                     finish();
                 }
+
             }
         });
     }

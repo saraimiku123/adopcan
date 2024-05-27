@@ -3,12 +3,16 @@ package com.example.adopcan;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -41,6 +45,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.PlayerViewHolder> {
         holder.tvnombre.setText("Nombre: "+mascotas.getNombre());
         holder.tvedad.setText("Edad: "+mascotas.getEdad());
         holder.tvsexo.setText("Sexo"+mascotas.getSexo());
+
+        holder.recCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mCtx,"mascota"+holder.getAdapterPosition(),Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(mCtx, Ficha_MascotaFragment.class);
+            }
+        });
     }
 
     @Override
@@ -51,6 +63,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.PlayerViewHolder> {
     class PlayerViewHolder extends RecyclerView.ViewHolder {
         TextView tvnombre, tvedad, tvsexo;
         ImageView imgMascota;
+        CardView recCard;
+
 
         public PlayerViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -58,6 +72,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.PlayerViewHolder> {
             tvedad = itemView.findViewById(R.id.edad_mascota);
             tvsexo = itemView.findViewById(R.id.sexo_mascota);
             imgMascota = itemView.findViewById(R.id.imagen_mascota);
+            recCard = itemView.findViewById(R.id.recCard);
+
+
         }
     }
 }
