@@ -106,8 +106,7 @@ public class RegistroUsuariosActivity extends AppCompatActivity {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-               Toast .makeText(getApplicationContext(),error.toString(),Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(getApplicationContext(), "Error en la petición: " + error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }){
             protected Map<String,String> getParams()throws AuthFailureError{
