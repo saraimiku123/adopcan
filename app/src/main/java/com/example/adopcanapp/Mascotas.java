@@ -2,7 +2,7 @@ package com.example.adopcanapp;
 
 import java.io.Serializable;
 
-public class Mascotas  implements Serializable {
+public class Mascotas  implements Serializable{
     private final int id;
     private final String nombre;
     private final int edad;

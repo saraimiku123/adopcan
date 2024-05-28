@@ -12,9 +12,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class RegistroUsuariosActivity extends AppCompatActivity {
 
     EditText campo_nombre, campo_telefono, campo_correo, campo_contrasenia;
+    String tipo_usuario;
 
 
     @Override
@@ -35,6 +48,7 @@ public class RegistroUsuariosActivity extends AppCompatActivity {
                     Toast.makeText(RegistroUsuariosActivity.this, "Datos ingresados correctamente", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(RegistroUsuariosActivity.this, MenuActivity.class));
                     finish();
+                    ejecutarServicio("https://adopcan.000webhostapp.com/crearusuario_app.php");
                 }
 
             }
@@ -81,4 +95,35 @@ public class RegistroUsuariosActivity extends AppCompatActivity {
 
         return retorno;
     }
+
+    public void ejecutarServicio(String URL){
+        StringRequest stringRequest= new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(getApplicationContext(), "Operacion Exitosa",Toast.LENGTH_SHORT).show();
+            }
+        } ,new Response.ErrorListener(){
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+               Toast .makeText(getApplicationContext(),error.toString(),Toast.LENGTH_SHORT).show();
+
+            }
+        }){
+            protected Map<String,String> getParams()throws AuthFailureError{
+                Map<String,String>parametros= new HashMap<String, String>();
+                parametros.put("correo",campo_correo.getText().toString());
+                parametros.put("telefono",campo_telefono.getText().toString());
+                parametros.put("nombre_completo",campo_nombre.getText().toString());
+                parametros.put("contrasenia",campo_contrasenia.getText().toString());
+                parametros.put("tipo_usuario",tipo_usuario="Usuario");
+
+                return parametros;
+            }
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+
+    }
+
 }

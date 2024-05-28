@@ -6,16 +6,12 @@
     android:padding="16dp"
     android:layout_marginTop="70dp">
 
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp"
         android:layout_marginTop="50dp">
-
 
         <TextView
             android:layout_width="match_parent"
@@ -25,16 +21,15 @@
             android:fontFamily="@font/secularone_regular"
             android:text="Catalogo Animal"
             android:textAlignment="center"
-
             android:textColor="@color/negro"
             android:textSize="20dp" />
-
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/vista_catalogo"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
     </LinearLayout>
+
 </LinearLayout>

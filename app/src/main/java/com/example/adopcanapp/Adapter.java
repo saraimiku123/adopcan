@@ -43,7 +43,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.PlayerViewHolder> {
                 .load(mascotas.getImagen())
                 .into(holder.imgMascota);
         holder.tvnombre.setText("Nombre: " + mascotas.getNombre());
-        holder.tvedad.setText("Edad: " + mascotas.getEdad());
+        holder.tvedad.setText("Edad: " + mascotas.getEdad()+"(Años)");
         holder.tvsexo.setText("Sexo: " + mascotas.getSexo());
 
         holder.detalles.setOnClickListener(new View.OnClickListener() {
