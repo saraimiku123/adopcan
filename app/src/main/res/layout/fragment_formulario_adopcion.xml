@@ -6,12 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".FormularioAdopcionFragment">
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="83dp">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +25,6 @@
                 android:fontFamily="@font/secularone_regular"
                 android:text="Formulario de Adopción"
                 android:textAlignment="center"
-
                 android:textColor="@color/negro"
                 android:textSize="20dp" />
 
@@ -64,6 +61,17 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/pdf_nombre_domicilio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="Nombre del archivo: "
+                        android:background="@color/white"
+                        android:textColor="@color/negro"
+                        android:textSize="16sp" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -71,6 +79,7 @@
                         android:text="2.- INE:"
                         android:textColor="@color/negro"
                         android:textSize="20sp" />
+
 
                     <Button
                         android:id="@+id/ine"
@@ -80,6 +89,17 @@
                         android:backgroundTint="@color/gris"
                         android:fontFamily="@font/secularone_regular"
                         android:text="Subir en formato PDF"
+                        android:textColor="@color/negro"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/pdf_nombre_ine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text="Nombre del archivo: "
+                        android:background="@color/white"
                         android:textColor="@color/negro"
                         android:textSize="16sp" />
 
@@ -95,7 +115,7 @@
                     <EditText
                         android:id="@+id/ingresos_monetarios"
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                        android:layout_height="50dp"
                         android:layout_marginTop="10dp"
                         android:background="@color/gris"
                         android:fontFamily="@font/secularone_regular"
@@ -104,7 +124,7 @@
                         android:padding="15dp"
                         android:textColor="@color/negro"
                         android:textColorHint="@color/negro"
-                        android:textSize="16sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -132,7 +152,7 @@
                         android:textSize="20sp" />
 
                     <Spinner
-                        android:id="@+id/hijos"
+                        android:id="@+id/cant_hijos"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
@@ -159,28 +179,23 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/secularone_regular"
-                        android:text="7.-Para animales con
-                        condiciones especiales:
-                         ¿estaría dispuesto a realizar las
-                         adecuaciones necesarias para que el
-                         animal viva bien?"
-                        android:textAlignment="gravity"
+                        android:text="7.- Para animales con condiciones especiales: ¿estaría dispuesto a realizar las adecuaciones necesarias para que el animal viva bien?"
                         android:textColor="@color/negro"
                         android:textSize="20sp" />
+
                     <Spinner
                         android:id="@+id/adecuaciones"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/style_spinner" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/secularone_regular"
-                        android:text="8.-¿Tiene disponibilidad de tiempo
-                        para cuidados del animal? "
-                        android:textAlignment="gravity"
+                        android:text="8.- ¿Tiene disponibilidad de tiempo para cuidados del animal?"
                         android:textColor="@color/negro"
                         android:textSize="20sp" />
 
@@ -196,10 +211,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/secularone_regular"
-                        android:text="9.- En caso de no tener tiempo,
-                        ¿Hay alguien más que pueda proporcionarle
-                        ayuda con los cuidados?"
-                        android:textAlignment="gravity"
+                        android:text="9.- En caso de no tener tiempo, ¿Hay alguien más que pueda proporcionarle ayuda con los cuidados?"
                         android:textColor="@color/negro"
                         android:textSize="20sp" />
 
@@ -212,6 +224,7 @@
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <Button
                 android:id="@+id/solicitar_adopcion"
                 android:layout_width="match_parent"
@@ -233,8 +246,6 @@
                 android:text="Cancelar"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
-
-
 
         </LinearLayout>
     </ScrollView>

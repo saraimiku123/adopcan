@@ -1,15 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".PerfilFragment">
+    android:layout_height="wrap_content"
+    android:paddingTop="83dp"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/frame_persona"
+        android:layout_height="match_parent"
+        />
+
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="40dp"
+        android:background="@drawable/titulos"
+        android:fontFamily="@font/secularone_regular"
+        android:text="Perfil"
+        android:textAlignment="center"
+        android:textColor="@color/negro"
+        android:textSize="20dp" />
 
-</FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColor="@color/negro"
+       android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/correoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:textColor="@color/negro"/>
+
+
+
+</LinearLayout>

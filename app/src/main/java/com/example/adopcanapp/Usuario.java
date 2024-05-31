@@ -1,22 +1,19 @@
 package com.example.adopcanapp;
 
-public class Usuario {
-   int id;
-     String telefono;
+import java.io.Serializable;
 
-    String nombre;
+public class Usuario implements Serializable {
+     private int id;
 
-     String contrasenia;
+     private String correo;
+     private String telefono;
 
-     String tipo_usuario;
+    private String nombre_completo;
 
-    public Usuario(int id, String telefono, String nombre, String contrasenia, String tipo_usuario) {
-        this.id = id;
-        this.telefono = telefono;
-        this.nombre = nombre;
-        this.contrasenia = contrasenia;
-        this.tipo_usuario = tipo_usuario;
-    }
+     private String contrasenia;
+
+     private String tipo_usuario;
+
 
     public int getId() {
         return id;
@@ -24,6 +21,14 @@ public class Usuario {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
     public String getTelefono() {
@@ -34,12 +39,12 @@ public class Usuario {
         this.telefono = telefono;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombre_completo() {
+        return nombre_completo;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre_completo(String nombre_completo) {
+        this.nombre_completo = nombre_completo;
     }
 
     public String getContrasenia() {
