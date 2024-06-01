@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class PerfilFragment extends Fragment {
     private Usuario usuario;
+    private Mascotas mascota;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -22,18 +23,21 @@ public class PerfilFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        if (getArguments() != null) {
-            usuario = (Usuario) getArguments().getSerializable("usuario");
+        // Obtener los datos del usuario y la mascota del Bundle
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            usuario = (Usuario) bundle.getSerializable("usuario");
+            mascota = (Mascotas) bundle.getSerializable("mascota");
         }
 
+        // Mostrar los datos en los TextViews
         if (usuario != null) {
             TextView nombreTextView = view.findViewById(R.id.nombreUsuario);
             nombreTextView.setText("Nombre de usuario: " + usuario.getNombre_completo());
-
-            TextView correoTextView = view.findViewById(R.id.correoUsuario);
-            correoTextView.setText("Correo: " + usuario.getCorreo());
-
         }
-
+        if (mascota != null) {
+            TextView correoTextView = view.findViewById(R.id.correoUsuario);
+            correoTextView.setText("Correo: " + mascota.getId());
+        }
     }
 }

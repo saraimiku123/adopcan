@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".FormularioAdopcionFragment">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/frame_formulario"
+        android:layout_height="wrap_content"
+        />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -65,9 +71,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/secularone_regular"
-                        android:text="Nombre del archivo: "
                         android:background="@color/white"
+                        android:fontFamily="@font/secularone_regular"
                         android:textColor="@color/negro"
                         android:textSize="16sp" />
 
@@ -97,9 +102,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/secularone_regular"
-                        android:text="Nombre del archivo: "
                         android:background="@color/white"
+                        android:fontFamily="@font/secularone_regular"
                         android:textColor="@color/negro"
                         android:textSize="16sp" />
 
@@ -213,6 +217,17 @@
                         android:fontFamily="@font/secularone_regular"
                         android:text="9.- En caso de no tener tiempo, ¿Hay alguien más que pueda proporcionarle ayuda con los cuidados?"
                         android:textColor="@color/negro"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/usuarioids"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/secularone_regular"
+                        android:text=" "
+                        android:textColor="@color/negro"
+                        android:background="@color/white"
                         android:textSize="20sp" />
 
                     <Spinner
