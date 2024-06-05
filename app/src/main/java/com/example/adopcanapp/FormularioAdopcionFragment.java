@@ -46,6 +46,8 @@ public class FormularioAdopcionFragment extends Fragment {
     private Usuario usuario;
     private Mascotas mascota;
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -63,6 +65,7 @@ public class FormularioAdopcionFragment extends Fragment {
         ayudante_cuidador = view.findViewById(R.id.ayudante);
         cantidad_hijos = view.findViewById(R.id.cant_hijos);
         ingresos_Mensuales = view.findViewById(R.id.ingresos_monetarios);
+
         final Button enviarSolicitudes = view.findViewById(R.id.solicitar_adopcion);
 
         setupSpinners();
@@ -73,31 +76,28 @@ public class FormularioAdopcionFragment extends Fragment {
         pdfNameTextViewDomicilio = view.findViewById(R.id.pdf_nombre_domicilio);
         Button selectPdfButtonIne = view.findViewById(R.id.ine);
         pdfNameTextViewIne = view.findViewById(R.id.pdf_nombre_ine);
+        obtenerid = view.findViewById(R.id.usuarioids);
+        obtenerid.setText("ID Usuario: " );
 
 
-        // Obtener el Bundle de argumentos
-        Bundle bundle = getArguments();
-        if (bundle != null) {
-            // Obtener el usuario y la mascota de los argumentos
-            usuario = (Usuario) bundle.getSerializable("usuario");
-            mascota = (Mascotas) bundle.getSerializable("mascota");
+        if (getArguments() != null) {
+            usuario = (Usuario) getArguments().getSerializable("usuario");
+            mascota = (Mascotas) getArguments().getSerializable("mascota");
 
-            // Obtener el usuario
-            Usuario usuario = (Usuario) bundle.getSerializable("usuario");
+            // Verificar que usuario no sea null y actualizar el TextView
             if (usuario != null) {
-                obtenerid= view.findViewById(R.id.id_usuario);
-                obtenerid.setText(usuario.getId());
-
-                // Hacer algo con el ID del usuario
-            }
-
-            // Obtener la mascota
-            Mascotas mascota = (Mascotas) bundle.getSerializable("mascota");
-            if (mascota != null) {
-                int idMascota = mascota.getId();
-                // Hacer algo con el ID de la mascota
+//                obtenerid = view.findViewById(R.id.usuarioids);
+//                obtenerid.setText("ID Usuario: " + usuario.getId());
             }
         }
+
+
+
+                // Hacer algo con el ID del usuario
+
+
+
+
 
         selectPdfButtonDomicilio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,9 +127,9 @@ public class FormularioAdopcionFragment extends Fragment {
         enviarSolicitudes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                if (validar()) {
-                    ejecutarServicio("https://adopcan.000webhostapp.com/insertar_solicitudes.php");
-               // }
+               if (validar()) {
+                ejecutarServicio("https://adopcan.000webhostapp.com/insertar_solicitudes.php");
+                 }
             }
         });
     }
@@ -325,7 +325,7 @@ public class FormularioAdopcionFragment extends Fragment {
                 parametros.put("jardin", jardines.getSelectedItem().toString());
                 parametros.put("cambios_hogar", mejoras_hogar.getSelectedItem().toString());
 
-              //  parametros.put("ayudante_cuidador", ayudante_cuidador.getSelectedItem().toString());
+                //  parametros.put("ayudante_cuidador", ayudante_cuidador.getSelectedItem().toString());
 
                 // Aquí puedes agregar más parámetros según tus necesidades
 

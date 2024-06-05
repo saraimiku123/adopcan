@@ -3,10 +3,10 @@ package com.example.adopcanapp;
 import java.io.Serializable;
 
 public class Mascotas  implements Serializable{
-    private final int id;
-    private final String nombre;
-    private final int edad;
-    private final String sexo;
+    private  int id;
+    private  String nombre;
+    private  int edad;
+    private  String sexo;
     private String talla;
 
     private String caracter;
@@ -16,6 +16,8 @@ public class Mascotas  implements Serializable{
     private String gustos;
     private String imagen;
 
+    public Mascotas() {
+    }
 
     public Mascotas(int id, String nombre, int edad, String sexo, String talla, String caracter, double peso, String tipo_mascota, String raza, String gustos, String imagen) {
         this.id = id;

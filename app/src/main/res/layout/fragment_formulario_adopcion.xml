@@ -225,7 +225,6 @@
                         android:id="@+id/usuarioids"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/secularone_regular"
-                        android:text=" "
                         android:textColor="@color/negro"
                         android:background="@color/white"
                         android:textSize="20sp" />

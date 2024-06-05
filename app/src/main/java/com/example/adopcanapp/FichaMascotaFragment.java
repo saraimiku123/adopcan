@@ -31,7 +31,6 @@ public class FichaMascotaFragment extends Fragment {
 
         if (getArguments() != null) {
             mascota = (Mascotas) getArguments().getSerializable("mascota");
-            usuario = (Usuario) getArguments().getSerializable("usuario"); // Obtén el usuario de los argumentos
         }
 
         if (mascota != null) {
@@ -64,19 +63,15 @@ public class FichaMascotaFragment extends Fragment {
             adoptarMascota.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Fragment fragment = new FormularioAdopcionFragment();
-
-                    // Crear un bundle para pasar los datos del usuario y la mascota seleccionada
-                    Bundle bundle = new Bundle();
-                    bundle.putSerializable("usuario", usuario);
-                    fragment.setArguments(bundle);
+                    // Crear una instancia del fragmento de formulario de adopción pasando el ID de la mascota
+                //    Fragment fragment = FormularioAdopcionFragment.newInstance(mascota.getId());
 
                     // Realizar la transición al fragmento de formulario de adopción
-                    FragmentManager fragmentManager = ((FragmentActivity) getContext()).getSupportFragmentManager();
-                    fragmentManager.beginTransaction()
-                            .replace(R.id.frame_layout, fragment)
-                            .addToBackStack(null)
-                            .commit();
+//                    FragmentManager fragmentManager = ((FragmentActivity) getContext()).getSupportFragmentManager();
+//                    fragmentManager.beginTransaction()
+//                            .replace(R.id.frame_layout, fragment)
+//                            .addToBackStack(null)
+//                            .commit();
                 }
             });
         }
